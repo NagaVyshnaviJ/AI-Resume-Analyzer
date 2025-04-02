@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container result-container">
+        <h3>Resume Analysis Result</h3>
+        <p><strong>Matching Score:</strong> {{ score }}%</p>
+        <h3>Extracted Skills:</h3>
+        <ul>
+            {% for skill in skills %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+        <br>
+        <a href="/" style="text-decoration: none;">
+            <input type="button" value="Analyze Another Resume" />
+        </a>
+    </div>
+</body>
+</html>
