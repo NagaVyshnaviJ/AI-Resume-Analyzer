@@ -36,7 +36,7 @@ Clone the repo:
 bash
 Copy
 Edit
-git clone https://github.com/your-username/resume-analyzer.git
+git clone https://github.com/NagaVyshnaviJ/resume-analyzer.git
 cd resume-analyzer
 Install dependencies:
 
